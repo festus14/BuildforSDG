@@ -20,9 +20,3 @@ const getInputData = () => {
   data.periodTypeValue = getRadioValue();
   return data;
 };
-
-submitButton.addEventListener("click", (e) => {
-  e.preventDefault();
-  const data = getInputData();
-  console.log(data);
-});
