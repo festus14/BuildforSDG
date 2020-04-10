@@ -1,0 +1,104 @@
+/* Form styles starts from here */
+
+#form-container {
+  margin: 8% auto;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0 2px 3px #ccc;
+  border: 1px solid #eee;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  #form-container {
+    width: 500px;
+  }
+}
+
+/* Input styles starts from here */
+
+.input-container {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.radio-container {
+  text-align: left;
+  display: inline-block;
+  padding: 0 2%;
+}
+
+.label {
+  font-size: x-large;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.radio-label {
+  font-size: medium;
+  font-weight: normal;
+  display: inline-block;
+  text-align: left;
+}
+
+.radio-head {
+    font-size: large;
+    float: left;
+    padding-left: 2.5%;
+}
+
+.input-element {
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: white;
+  font: inherit;
+  padding: 6px 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-element:focus {
+  outline: none;
+  background-color: #ccc;
+}
+
+.invalid {
+  border: 1px solid red;
+  background-color: #fda49a;
+}
+
+/* Button styles starts from here */
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 10px;
+  margin: 8px;
+}
+
+.button:first-of-type {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.success {
+  color: #5c9210;
+}
+
+.danger {
+  color: #944317;
+}

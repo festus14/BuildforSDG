@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+      #BuildforSDG covid19ImpactEstimator Challenge 4 Assessment Solution
+    </title>
+    <meta
+      name="description"
+      content="#BuildforSDG covid19ImpactEstimator: covid-19 estimator built for #BuildforSDG challenge 4 assessment. Input the data needed for the covid19ImpactEstimator function. Make a POST request"
+    />
+    <meta
+      name="keywords"
+      content="BuildforSDG, covid19ImpactEstimator, Challenge4, Frontend, Developers"
+    />
+    <meta name="author" content="Festus Omole" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <main id="form-container">
+      <h4 class="label">Enter Your Custom Input Data</h4>
+      <form action="">
+        <div class="input-container">
+          <input
+            class="input-element"
+            type="number"
+            placeholder="Population"
+            data-population
+          />
+        </div>
+        <div class="input-container">
+          <input
+            class="input-element"
+            type="number"
+            placeholder="Time To Elapse"
+            data-time-to-elapse
+          />
+        </div>
+        <div class="input-container">
+          <input
+            class="input-element"
+            type="number"
+            placeholder="Reported Cases"
+            data-reported-cases
+          />
+        </div>
+        <div class="input-container">
+          <input
+            class="input-element"
+            type="number"
+            placeholder="Total Hospital Beds"
+            data-total-hospital-beds
+          />
+        </div>
+        <label class="label radio-head">Select Period Type</label>
+        <div class="input-container radio-container">
+          <input
+            type="radio"
+            name="period-type"
+            value="days"
+            id="days"
+            data-period-type
+          />
+          <label class="label radio-label" for="days">Days</label>
+        </div>
+        <div class="input-container radio-container">
+          <input
+            type="radio"
+            name="period-type"
+            value="weeks"
+            id="weeks"
+            data-period-type
+          />
+          <label class="label radio-label" for="weeks">Weeks</label>
+        </div>
+        <div class="input-container radio-container">
+          <input
+            type="radio"
+            name="period-type"
+            value="months"
+            id="months"
+            data-period-type
+          />
+          <label class="label radio-label" for="months">Months</label>
+        </div>
+        <button class="button success" data-go-estimate>
+          Submit
+        </button>
+      </form>
+    </main>
+
+    <script src="script.js" async defer></script>
+  </body>
+</html>
