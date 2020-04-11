@@ -22,9 +22,10 @@
     <meta name="author" content="Festus Omole" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="grey" />
-    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
     <link rel="apple-touch-icon" href="/images/apple-icon-180.jpg" />
-    <link rel="canonical" href="https://covid19impactestimator.netlify.com"/>
+    <link rel="canonical" href="https://covid19impactestimator.netlify.com" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -39,48 +40,51 @@
       <h4 class="label">Enter Your Custom Input Data</h4>
       <form action="">
         <div class="input-container">
-          <label for="population">
-            <input
-              class="input-element"
-              type="number"
-              placeholder="Population"
-              id="population"
-              data-population
-            />
-          </label>
+          <label for="population" class="label-head">
+            <span style="text-align: left;">Population</span> </label
+          ><input
+            class="input-element"
+            type="number"
+            placeholder="Population"
+            id="population"
+            data-population
+          />
         </div>
         <div class="input-container">
-          <label for="time-to-elapse">
-            <input
-              class="input-element"
-              type="number"
-              placeholder="Time To Elapse"
-              id="time-to-elapse"
-              data-time-to-elapse
-            />
+          <label for="time-to-elapse" class="label-head">
+            Time to Elapse
           </label>
+          <input
+            class="input-element"
+            type="number"
+            placeholder="Time To Elapse"
+            id="time-to-elapse"
+            data-time-to-elapse
+          />
         </div>
         <div class="input-container">
-          <label for="reported-cases">
-            <input
-              class="input-element"
-              type="number"
-              placeholder="Reported Cases"
-              id="reported-cases"
-              data-reported-cases
-            />
+          <label for="reported-cases" class="label-head">
+            Reported Cases
           </label>
+          <input
+            class="input-element"
+            type="number"
+            placeholder="Reported Cases"
+            id="reported-cases"
+            data-reported-cases
+          />
         </div>
         <div class="input-container">
-          <label for="total-hospital-beds">
-            <input
-              class="input-element"
-              type="number"
-              placeholder="Total Hospital Beds"
-              id="total-hospital-beds"
-              data-total-hospital-beds
-            />
+          <label for="total-hospital-beds" class="label-head">
+            Total Hospital Beds
           </label>
+          <input
+            class="input-element"
+            type="number"
+            placeholder="Total Hospital Beds"
+            id="total-hospital-beds"
+            data-total-hospital-beds
+          />
         </div>
         <label class="label radio-head">Select Period Type</label>
         <div class="input-container radio-container">

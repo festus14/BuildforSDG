@@ -37,6 +37,11 @@
   margin-bottom: 8px;
 }
 
+.label-head {
+  text-align: left;
+  font-size: medium;
+}
+
 .radio-label {
   font-size: medium;
   font-weight: normal;

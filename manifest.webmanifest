@@ -1,22 +1,27 @@
 {
-    "short_name": "covid19ImpactEstimator",
-    "name": "Covid-19 Impact Estimator",
-    "description": "Weather forecast information",
-    "icons": [
-      {
-        "src": "/images/cross-192.png",
-        "type": "image/png",
-        "sizes": "192x192"
-      },
-      {
-        "src": "/images/manifest-icon-512.jpg",
-        "type": "image/jpg",
-        "sizes": "512x512"
-      }
-    ],
-    "start_url": "/",
-    "background_color": "#fff",
-    "display": "minimal-ui",
-    "scope": "/",
-    "theme_color": "grey"
-  }
+  "short_name": "covid19ImpactEstimator",
+  "name": "Covid-19 Impact Estimator",
+  "description": "#BuildforSDG covid19ImpactEstimator: covid-19 estimator built for #BuildforSDG challenge 4 assessment. Input the data needed for the covid19ImpactEstimator function. Make a POST request",
+  "icons": [
+    {
+      "src": "/images/cross-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/manifest-icon-512.jpg",
+      "type": "image/jpg",
+      "sizes": "512x512"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#fff",
+  "display": "minimal-ui",
+  "scope": "/",
+  "theme_color": "grey"
+}
