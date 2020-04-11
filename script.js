@@ -1,6 +1,6 @@
 const getRadioValue = () => {
-  for (let elem in periodType) {
-    if (periodType[elem].checked) return periodType[elem].value;
+  for (let elem in periodTypes) {
+    if (periodTypes[elem].checked) return periodTypes[elem].value;
   }
 };
 
