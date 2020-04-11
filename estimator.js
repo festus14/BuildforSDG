@@ -132,6 +132,5 @@ const covid19ImpactEstimator = (data) => {
 submitButton.addEventListener("click", (e) => {
   e.preventDefault();
   const data = getInputData();
-  console.log(data);
   covid19ImpactEstimator(data);
 });

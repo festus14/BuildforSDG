@@ -12,7 +12,7 @@ self.addEventListener("install", function (event) {
   // Perform install steps
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
-      console.log("Opened cache");
+      // console.log("Opened cache");
       return cache.addAll(urlsToCache);
     })
   );
@@ -77,5 +77,5 @@ cache
     })
   )
   .then(function () {
-    console.log("All resources have been fetched and cached.");
+    // console.log("All resources have been fetched and cached.");
   });
