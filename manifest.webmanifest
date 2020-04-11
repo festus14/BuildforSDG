@@ -1,0 +1,22 @@
+{
+    "short_name": "covid19ImpactEstimator",
+    "name": "Covid-19 Impact Estimator",
+    "description": "Weather forecast information",
+    "icons": [
+      {
+        "src": "/images/cross-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/images/manifest-icon-512.jpg",
+        "type": "image/jpg",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#fff",
+    "display": "minimal-ui",
+    "scope": "/",
+    "theme_color": "grey"
+  }

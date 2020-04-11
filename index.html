@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html lang="en" class="no-js">
   <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
@@ -21,7 +21,10 @@
     />
     <meta name="author" content="Festus Omole" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="theme-color" content="grey" />
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-icon" href="/images/apple-icon-180.jpg" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -35,36 +38,48 @@
       <h4 class="label">Enter Your Custom Input Data</h4>
       <form action="">
         <div class="input-container">
-          <input
-            class="input-element"
-            type="number"
-            placeholder="Population"
-            data-population
-          />
+          <label for="population">
+            <input
+              class="input-element"
+              type="number"
+              placeholder="Population"
+              id="population"
+              data-population
+            />
+          </label>
         </div>
         <div class="input-container">
-          <input
-            class="input-element"
-            type="number"
-            placeholder="Time To Elapse"
-            data-time-to-elapse
-          />
+          <label for="time-to-elapse">
+            <input
+              class="input-element"
+              type="number"
+              placeholder="Time To Elapse"
+              id="time-to-elapse"
+              data-time-to-elapse
+            />
+          </label>
         </div>
         <div class="input-container">
-          <input
-            class="input-element"
-            type="number"
-            placeholder="Reported Cases"
-            data-reported-cases
-          />
+          <label for="reported-cases">
+            <input
+              class="input-element"
+              type="number"
+              placeholder="Reported Cases"
+              id="reported-cases"
+              data-reported-cases
+            />
+          </label>
         </div>
         <div class="input-container">
-          <input
-            class="input-element"
-            type="number"
-            placeholder="Total Hospital Beds"
-            data-total-hospital-beds
-          />
+          <label for="total-hospital-beds">
+            <input
+              class="input-element"
+              type="number"
+              placeholder="Total Hospital Beds"
+              id="total-hospital-beds"
+              data-total-hospital-beds
+            />
+          </label>
         </div>
         <label class="label radio-head">Select Period Type</label>
         <div class="input-container radio-container">
@@ -105,5 +120,6 @@
 
     <script src="script.js" async defer></script>
     <script src="estimator.js" async defer></script>
+    <script src="register-sw.js" async defer></script>
   </body>
 </html>

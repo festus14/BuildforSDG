@@ -1,4 +1,8 @@
 /* eslint-disable linebreak-style */
+
+const avgDailyIncomeInUSD = 5;
+const avgDailyIncomePopulation = 0.71;
+
 const convertToDays = (periodType, time) => {
   let dayTime;
   switch (periodType) {
@@ -78,8 +82,8 @@ const getImpactData = (data) => {
   );
   impact.dollarsInFlight = estimateDollarsInFlight(
     impact.infectionsByRequestedTime,
-    data.region.avgDailyIncomeInUSD,
-    data.region.avgDailyIncomePopulation,
+    avgDailyIncomeInUSD,
+    avgDailyIncomePopulation,
     data.periodType,
     data.timeToElapse
   );
@@ -109,8 +113,8 @@ const getSevereImpactData = (data) => {
   );
   severeImpact.dollarsInFlight = estimateDollarsInFlight(
     severeImpact.infectionsByRequestedTime,
-    data.region.avgDailyIncomeInUSD,
-    data.region.avgDailyIncomePopulation,
+    avgDailyIncomeInUSD,
+    avgDailyIncomePopulation,
     data.periodType,
     data.timeToElapse
   );
@@ -128,5 +132,6 @@ const covid19ImpactEstimator = (data) => {
 submitButton.addEventListener("click", (e) => {
   e.preventDefault();
   const data = getInputData();
+  console.log(data);
   covid19ImpactEstimator(data);
 });
