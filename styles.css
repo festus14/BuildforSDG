@@ -24,12 +24,6 @@
   box-sizing: border-box;
 }
 
-.radio-container {
-  text-align: left;
-  display: inline-block;
-  padding: 0 2%;
-}
-
 .label {
   font-size: x-large;
   font-weight: bold;
@@ -42,17 +36,12 @@
   font-size: medium;
 }
 
-.radio-label {
-  font-size: medium;
-  font-weight: normal;
-  display: inline-block;
-  text-align: left;
-}
-
-.radio-head {
-    font-size: large;
-    float: left;
-    padding-left: 2.5%;
+.select {
+  display: block;
+  width: 90%;
+  margin-left: 2.5%;
+  padding: 1.2%;
+  border-style: inset;
 }
 
 .input-element {

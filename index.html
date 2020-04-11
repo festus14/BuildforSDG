@@ -86,37 +86,13 @@
             data-total-hospital-beds
           />
         </div>
-        <label class="label radio-head">Select Period Type</label>
-        <div class="input-container radio-container">
-          <input
-            type="radio"
-            name="period-type"
-            value="days"
-            id="days"
-            data-period-type
-          />
-          <label class="label radio-label" for="days">Days</label>
-        </div>
-        <div class="input-container radio-container">
-          <input
-            type="radio"
-            name="period-type"
-            value="weeks"
-            id="weeks"
-            data-period-type
-          />
-          <label class="label radio-label" for="weeks">Weeks</label>
-        </div>
-        <div class="input-container radio-container">
-          <input
-            type="radio"
-            name="period-type"
-            value="months"
-            id="months"
-            data-period-type
-          />
-          <label class="label radio-label" for="months">Months</label>
-        </div>
+        <label class="label-head" for="select-head">Select Period Type</label>
+        <select id="select-head" class="select" data-period-type>
+          <option disabled selected> --Select Period Type-- </option>
+          <option value="days">Days</option>
+          <option value="weeks">Weeks</option>
+          <option value="months">Months</option>
+        </select>
         <button class="button success" data-go-estimate>
           Submit
         </button>
